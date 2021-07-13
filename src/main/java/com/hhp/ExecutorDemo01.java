@@ -1,4 +1,4 @@
-package com.hhp.juc;
+package com.hhp;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,9 +9,9 @@ import java.util.concurrent.Executors;
 public class ExecutorDemo01 {
 
     public static void main(String[] args) {
-        ExecutorService threadPool = Executors.newSingleThreadExecutor();
+//        ExecutorService threadPool = Executors.newSingleThreadExecutor();
 //        ExecutorService threadPool = Executors.newFixedThreadPool(5);
-//        ExecutorService threadPool = Executors.newCachedThreadPool();//
+        ExecutorService threadPool = Executors.newCachedThreadPool();//
 
         try {
             for (int i = 0; i < 10; i++) {
@@ -22,6 +22,7 @@ public class ExecutorDemo01 {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+
             threadPool.shutdown();
         }
 

@@ -1,4 +1,4 @@
-package com.hhp.juc;
+package com.hhp;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicStampedReference;

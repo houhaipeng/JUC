@@ -1,4 +1,4 @@
-package com.hhp.juc;
+package com.hhp;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +13,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *  2. List<String> list = Collections.synchronizedList(new ArrayList<>();
  *  3. List<String> list = new CopyOnWriteArrayList<>();
  */
-public class CopyOnWriteArrayListDemo {
+public class CopyOnWriteListDemo {
 
     public static void main(String[] args) {
 //        List<String> list = Collections.synchronizedList(new ArrayList<>());

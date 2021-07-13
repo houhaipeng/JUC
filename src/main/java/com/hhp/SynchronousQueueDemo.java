@@ -1,4 +1,4 @@
-package com.hhp.juc;
+package com.hhp;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
@@ -25,14 +25,14 @@ public class SynchronousQueueDemo {
         new Thread(() -> {
             try {
                 TimeUnit.SECONDS.sleep(3);
-                System.out.println(Thread.currentThread().getName() +" get "+ blockingQueue.take());
+                System.out.println(Thread.currentThread().getName() +" "+ blockingQueue.take());
                 TimeUnit.SECONDS.sleep(3);
-                System.out.println(Thread.currentThread().getName() +" get "+ blockingQueue.take());
+                System.out.println(Thread.currentThread().getName() +" "+ blockingQueue.take());
                 TimeUnit.SECONDS.sleep(3);
-                System.out.println(Thread.currentThread().getName() +" get "+ blockingQueue.take());
+                System.out.println(Thread.currentThread().getName() +" "+ blockingQueue.take());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }, "T2").start();
+        }, "T1").start();
     }
 }

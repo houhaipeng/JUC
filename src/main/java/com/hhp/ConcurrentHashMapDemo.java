@@ -1,4 +1,4 @@
-package com.hhp.juc;
+package com.hhp;
 
 import java.util.Map;
 import java.util.UUID;
@@ -17,5 +17,7 @@ public class ConcurrentHashMapDemo {
                 System.out.println(map);
             }, String.valueOf(i)).start();
         }
+
+
     }
 }

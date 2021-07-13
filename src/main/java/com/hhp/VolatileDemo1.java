@@ -1,8 +1,11 @@
-package com.hhp.juc;
+package com.hhp;
 
 import java.util.concurrent.TimeUnit;
 
-public class VolatileDemo {
+/**
+ * volatile的可见性验证
+ */
+public class VolatileDemo1 {
 
     private volatile static int num = 0;
 
